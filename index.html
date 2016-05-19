@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluid Flexbox fly-out sidebar</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar is-visible">
+    <p class="sidebar-content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+      repellendus id aliquid ad, consectetur fuga magnam sit inventore
+      cupiditate quaerat.
+    </p>
+  </aside>
+  <main class="content">
+    <button class="toggle-sidebar">Toggle sidebar</button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis odit
+      eius repudiandae ipsa, libero soluta nemo nihil molestias aliquam ex eum
+      ipsum impedit sequi suscipit veniam repellat ullam? Repellat voluptatibus
+      ex voluptates odio fugiat vitae quibusdam adipisci aliquid, animi labore
+      mollitia, id, accusamus laborum minus veniam cum accusantium perspiciatis!
+      Quod consequuntur obcaecati enim itaque cumque eum optio esse, fuga
+      ducimus ipsa, praesentium! Ad sapiente eum est amet ab rem vero hic
+      minima, quod, tenetur dolorum quos repellendus inventore animi ullam
+      nostrum id, temporibus laboriosam eius. Numquam, optio nisi cupiditate
+      quis distinctio nobis, cum recusandae autem maxime eveniet quidem
+      excepturi?
+    </p>
+  </main>
+
+  <script>
+    (function () {
+      var sidebar = document.querySelector('.sidebar');
+
+      document.querySelector('.toggle-sidebar').onclick = function () {
+        sidebar.classList.toggle('is-visible');
+      }
+    })();
+  </script>
+</body>
+</html>
